@@ -34,7 +34,7 @@
           </a>
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-link" href="./index.html">Home</a>
+              <a class="header-link active" href="./index.html">Home</a>
             </li>
             <li class="header-item">
               <a class="header-link" href="#how">How it's made?</a>
@@ -53,12 +53,15 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <!-- <img
                 src="./images/header/instagram.svg"
                 alt="logo instagram"
                 width="24"
                 height="24"
-              />
+              /> -->
+              <svg class="header-networks-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
             </a>
           </li>
           <li class="header-networks-item">
@@ -68,7 +71,10 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./images/header/twitter.svg" alt="logo twitter" width="24" height="24" />
+              <!-- <img src="./images/header/twitter.svg" alt="logo twitter" width="24" height="24" /> -->
+              <svg class="header-networks-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -87,7 +93,11 @@
             <a class="btn primary-btn" href="#how">How it’s made</a>
             <button class="scroll-down-btn" type="button">
               scroll down
-              <span class="circle"></span>
+              <span class="circle">
+                <svg class="circle-icon" width="22" height="22">
+                  <use href="./images/icons.svg#arrowdown"></use>
+                </svg>
+              </span>
             </button>
           </div>
         </div>
