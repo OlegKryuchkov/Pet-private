@@ -177,44 +177,104 @@
           </p>
           <ul class="ingridients-list card-set">
             <li class="ingridients-item card-set-item">
-              <img
-                class="ingridients-img"
-                src="./images/ingredients/img-1.png"
-                alt="chocolate"
-                width="206"
-                height="160"
-              />
-              <h3 class="ingridients-subtitle light">Milk chocolate</h3>
+              <div class="ingredients-wrapper">
+                <img
+                  class="ingridients-img"
+                  src="./images/ingredients/img-1.png"
+                  alt="chocolate"
+                  width="206"
+                  height="160"
+                />
+                <h3 class="ingridients-subtitle light">Milk chocolate</h3>
+              </div>
+              <div class="overlay">
+                <h3 class="overlay-title">Milk chocolate</h3>
+                <div class="overlay-wrapper">
+                  <p class="overlay-label">chocolate</p>
+                  <p class="overlay-label active">the benefits</p>
+                </div>
+                <p class="overlay-descr"
+                  >Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and
+                  milk. It is the most consumed type of chocolate. Chocolate was originally sold and
+                  consumed as a beverage in pre-Columbian times. Although four-fifths of all milk
+                  chocolate is sold in the United States and Europe.</p
+                >
+              </div>
             </li>
             <li class="ingridients-item card-set-item">
-              <img
-                class="ingridients-img"
-                src="./images/ingredients/img-2.png"
-                alt="bottle of milk"
-                width="206"
-                height="160"
-              />
-              <h3 class="ingridients-subtitle">Milk</h3>
+              <div class="ingredients-wrapper">
+                <img
+                  class="ingridients-img"
+                  src="./images/ingredients/img-2.png"
+                  alt="bottle of milk"
+                  width="206"
+                  height="160"
+                />
+                <h3 class="ingridients-subtitle">Milk</h3></div
+              >
+              <div class="overlay">
+                <h3 class="overlay-title">Milk</h3>
+                <div class="overlay-wrapper">
+                  <p class="overlay-label">milk</p>
+                  <p class="overlay-label active">the benefits</p>
+                </div>
+                <p class="overlay-descr"
+                  >Milk is a white liquid food produced by the mammary glands of mammals. It is the
+                  primary source of nutrition for young mammals (including breastfed human infants)
+                  before they are able to digest solid food.Early-lactation milk, which is called
+                  colostrum, contains antibodies that strengthen the immune system.</p
+                >
+              </div>
             </li>
             <li class="ingridients-item card-set-item">
-              <img
-                class="ingridients-img"
-                src="./images/ingredients/img-3.png"
-                alt="nuts"
-                width="206"
-                height="160"
-              />
-              <h3 class="ingridients-subtitle">Nuts</h3>
+              <div class="ingredients-wrapper">
+                <img
+                  class="ingridients-img"
+                  src="./images/ingredients/img-3.png"
+                  alt="nuts"
+                  width="206"
+                  height="160"
+                />
+                <h3 class="ingridients-subtitle light">Nuts</h3>
+              </div>
+              <div class="overlay">
+                <h3 class="overlay-title">Nuts</h3>
+                <div class="overlay-wrapper">
+                  <p class="overlay-label">nuts</p>
+                  <p class="overlay-label active">the benefits</p>
+                </div>
+                <p class="overlay-descr"
+                  >Almonds, pistachios, and walnuts are some types of nuts that contain healthy
+                  nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer
+                  benefits such as reducing your risk of heart disease. They’re a good source of
+                  fiber, healthy fats, and plant protein. Plus, they’re great on their own.</p
+                >
+              </div>
             </li>
             <li class="ingridients-item card-set-item">
-              <img
-                class="ingridients-img"
-                src="./images/ingredients/img-4.png"
-                alt="coffee"
-                width="206"
-                height="160"
-              />
-              <h3 class="ingridients-subtitle">Semi - sweet chocolate</h3>
+              <div class="ingredients-wrapper">
+                <img
+                  class="ingridients-img"
+                  src="./images/ingredients/img-4.png"
+                  alt="coffee"
+                  width="206"
+                  height="160"
+                />
+                <h3 class="ingridients-subtitle">Semi - sweet chocolate</h3>
+              </div>
+              <div class="overlay">
+                <h3 class="overlay-title">Semi - sweet chocolate</h3>
+                <div class="overlay-wrapper">
+                  <p class="overlay-label">sweet chocolate</p>
+                  <p class="overlay-label active">the benefits</p>
+                </div>
+                <p class="overlay-descr"
+                  >Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways
+                  to gain an understanding of this type of chocolate is to compare it to a different
+                  type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison,
+                  it has a slightly bitter taste whereas milk chocolate is sweeter and more mellow.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -321,7 +381,9 @@
               </div>
             </li>
           </ul>
-          <button class="reviews-btn btn secondary-btn" type="button">Leave a review</button>
+          <button class="reviews-btn btn secondary-btn" type="button" data-modal-open
+            >Leave a review</button
+          >
         </div>
       </section>
     </main>
@@ -360,6 +422,18 @@
         </div>
       </div>
     </footer>
-    <script src="/index.js" type="module"></script>
+
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon" width="28" height="28">
+            <use href="./images/icons.svg#x-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>
