@@ -906,8 +906,52 @@ input {
 
 .modal-form {}
 
-.modal-form-field {}
+.modal-form-field {
+    position: relative;
+    display: block;
+    margin-bottom: 18px;
+}
 
-.modal-form-label {}
+.modal-form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: rgba(64, 64, 64, 0.30);
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: -0.28px;
+}
 
-.modal-form-input {}
+.modal-form-input {
+    width: 100%;
+    height: 68px;
+    padding: 22px 64px;
+    border-radius: 13px;
+    border: 1px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.03);
+    outline: transparent;
+
+    font-size: 24px;
+
+    transition: border-color 250ms ease-out;
+}
+
+.modal-form-input:focus {
+    border-color: var(--primary-orange-color);
+}
+
+.modal-form-icon {
+    position: absolute;
+    bottom: 22px;
+    left: 24px;
+
+    fill: none;
+    stroke: #404040;
+
+    transition: stroke 250ms ease-out;
+}
+
+.modal-form-input:focus + .modal-form-icon {
+    stroke: var(--primary-orange-color);
+}
+
+
